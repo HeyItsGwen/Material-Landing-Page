@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header class='d-flex'>
+        <img src='' alt='company logo'/>
+        <nav className="App-header" id='navBar'>
+          <NavLinks />
+        </nav>
       </header>
     </div>
   );
 }
 
 export default App;
+
+function NavLinks() {
+  return (
+    <ul class='d-flex'>
+      <li>
+        <a href='#navBar'>To Top</a>
+      </li>
+      <li>
+        <a href='#about'>About</a>
+      </li>
+      <li>
+        <a href='#retailers'>Find a Retailer</a>
+      </li>
+    </ul>
+  )
+}
