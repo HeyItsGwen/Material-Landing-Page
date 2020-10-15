@@ -1,13 +1,31 @@
 header {
-  padding: 15px 30px;
+  padding: 20px 30px;
+}
+
+header nav {
+  width: 100vw;
+}
+
+header nav #socialLinks {
+  padding-right: 30px;
+  font-size: 0.8em;
+}
+
+header nav #socialLinks li {
+  padding-left: 35px;
 }
 
 header nav ul {
-  padding-left: 0;
+  padding-left: 30px;
 }
 
 header nav ul li {
   list-style-type: none;
   padding-left: 20px;
+  font-size: 0.95em;
+}
+
+header nav ul li a i {
+  font-size: 1.6em;
 }
 /*# sourceMappingURL=index.css.map */
