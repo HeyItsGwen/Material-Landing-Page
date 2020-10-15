@@ -22,7 +22,7 @@ export default App;
 function NavLinks() {
   return (
     <ul class='d-flex'>
-      <li>
+      <li class='firstLi'>
         <a href='#header'><i class="fas fa-arrow-alt-circle-up"></i></a>
       </li>
       <li>
@@ -47,18 +47,10 @@ function SocialLinks() {
 
 function HeroSection() {
   return (
-    <section class='jumbotron d-flex flex-column flex-md-row justify-content-between'>
+    <section class='jumbotron d-flex flex-column flex-md-row justify-content-between align-items-center'>
       <span class='align-self-md-center' id='titleP'>
-        <h1>Your Brand</h1>
-        <p>Put it in the spotlight, and show it off to the world</p>
-      </span>
-      <span class='card align-self-md-center'>
-        <img src={watch} class='card-img-top' alt='a product'></img>
-        <div class='card-body'>
-          <h3 class='card-title text-right'>Make it yours</h3>
-          <p class='card-text text-right'>Drive users to your products</p>
-          <a href='http://www.ebay.com' target='blank' class='btn btn-info'>Shop</a>
-        </div>
+        <h1>It's<br/>Your<br/>Brand</h1>
+        <p>Put it in the spotlight; Show it off to the world</p>
       </span>
     </section>
   )

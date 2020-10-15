@@ -1,5 +1,10 @@
 @import './mixins.scss';
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 header {
   max-width: 1200px;
   padding: 20px 30px 5px 30px;
@@ -30,7 +35,17 @@ header {
 
     ul {
       padding-left: 30px;
+
+      @media only screen and (max-width: 576px) {
+        padding-left: 0;
+      }
   
+      .firstLi {
+        @media only screen and (max-width: 576px) {
+          padding-left: 0;
+        }
+      }
+
       li {
         list-style-type: none;
         padding-left: 20px;
@@ -58,38 +73,31 @@ main {
   }
 
   .jumbotron {
-    background-image: url(./images/clouds.jpg);
-    background-position: center;
+    background-image: url(./images/camera.png);
+    background-position: right;
     border-radius: 0;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
     top: -68.55px;
-    padding: 80px 25vw 20px 30vw;
+    padding: 100px 25vw 20px 30vw;
 
     @media only screen and (max-width: 576px) {
-      padding: 80px 10vw 20px 0;
+      padding: 80px 20px;
+      background-position-x: 600px;
+      background-position-y: 100px;
     }
 
     h1 {
       font-weight: 600;
-      font-size: 5em;
+      font-size: 4.5em;
       color: rgb(255, 255, 255);
     }
 
     #titleP p {
       font-style: italic;
-      position: relative;
-      left: 30px;
+      color: white;
     }
 
-    .card {
-      max-width: 300px;
-      height: 330px;
-
-      /*@media only screen and (min-width: 992px) {
-        margin-right: 200px;
-      }*/
-    }
   }
 }
