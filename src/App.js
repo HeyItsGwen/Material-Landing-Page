@@ -15,6 +15,9 @@ function App() {
         <FindARetailer />
         <ContactSection />
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
@@ -116,7 +119,7 @@ function AboutSection() {
 function FindARetailer() {
   return (
     <section id='retailers' class='d-flex flex-column align-items-center'>
-      <h3>Find A Retailer</h3>
+      <h3>Find A Retailer <i class="fas fa-shopping-cart"></i></h3>
       <div class='row' id='retailerDiv'>
         <div class='col-6'>
           <p>ONE</p>
@@ -134,7 +137,7 @@ function FindARetailer() {
 function ContactSection() {
   return (
     <div id='contact' class='d-flex flex-column align-items-center'>
-      <h3>Contact Us</h3>
+      <h3><i class="fas fa-comments"></i> Contact Us</h3>
       <div class='row justify-content-around' id='contactDiv'>
         <div class='col-sm-6 col-12 d-flex flex-column justify-content-center contactSections'>
           <p class='text-center'>Find us on social media</p>
@@ -143,13 +146,34 @@ function ContactSection() {
             <li><a href='http://www.twitter.com' target='blank'><i class="fab fa-twitter"></i></a></li>
             <li><a href='http://www.instagram.com' target='blank'><i class="fab fa-instagram"></i></a></li>
           </ul>
-          <p class='text-center'>Or send us an email at:</p>
-          <p class='text-center'><a class='text-center' href='emailto:exampleemail@email.com'>YourBrand@email.com</a></p>
+          <p class='text-center'>Or send us an email at:<br/><a class='text-center' href='emailto:exampleemail@email.com'>YourBrand@email.com</a></p>
+          <p class='text-center'></p>
         </div>
         <div class='col-sm-6 col-12 contactSections'>
-          <p>contact form</p>
+          <p>Or contact us here, and we'll get back to you:</p>
+          <form id='contactForm'>
+            <div class='form-group'>
+              <label for='emailInput'>Your Email:</label>
+              <input type='email' class='form-control' id='emailInput' aria-describedby="emailHelp"></input>
+              <small id='emailHelp' class='form-text text-muted'>Your information is safe with us!</small>
+            </div>
+            <div class='form-group'>
+              <label for='helpInput'>How can we help?</label>
+              <input type='text' class='form-control' id='helpInput'></input>
+            </div>
+            <button type='submit' class='btn btn-secondary'>Send</button>
+          </form>
         </div>
       </div>
+    </div>
+  )
+}
+
+function Footer() {
+  return (
+    <div id='footer' class='d-flex flex-column align-items-center'>
+      <p>Copyright <i class="fas fa-copyright"></i>Your Brand 2020. | <a class='text-center' href='emailto:exampleemail@email.com'>YourBrand@email.com</a> | 1(800)555-1234</p>
+      <p>Made with ♥ and <i class="fas fa-coffee"></i> by <a href='https://github.com/HeyItsGwen' target='blank'>Gwen</a></p>
     </div>
   )
 }

@@ -197,12 +197,18 @@ main {
       div {
         .bottomSocials {
           list-style-type: none;
-          padding-left: 0;
+          padding: 20px 0;
+
+          li {
+            font-size: 3em;
+          }
         }
       }
 
       .contactSections {
         min-width: 200px;
+        max-width: 400px;
+        padding: 40px 20px;
       }
     }
 
@@ -218,5 +224,17 @@ main {
         left: 70px;
       }
     }
+  }
+}
+
+#footer {
+  font-size: 0.8em;
+  background-color: black;
+  padding: 15px;
+  margin-top: 20px;
+
+  p {
+    margin-bottom: 0;
+    color: rgb(155, 155, 155);
   }
 }
