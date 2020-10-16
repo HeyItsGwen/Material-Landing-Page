@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   overflow-x: hidden;
@@ -13,6 +17,12 @@ header {
 
 header nav {
   width: 100vw;
+}
+
+header nav .navLinks {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
 }
 
 header nav a {
@@ -72,7 +82,7 @@ main:before {
 }
 
 main .jumbotron {
-  background-image: url(./images/camera.png);
+  background-image: url(./images/cameratransparent.png);
   background-position: right;
   border-radius: 0;
   height: 100vh;
@@ -90,14 +100,127 @@ main .jumbotron {
   }
 }
 
+main .jumbotron span {
+  position: relative;
+  top: -100px;
+}
+
+@media only screen and (min-width: 576px) {
+  main .jumbotron span {
+    left: -100px;
+  }
+}
+
 main .jumbotron h1 {
   font-weight: 600;
   font-size: 4.5em;
   color: white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 main .jumbotron #titleP p {
   font-style: italic;
   color: white;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+main #aboutSection {
+  position: relative;
+  top: -50px;
+}
+
+main #aboutSection .row .aboutInfo {
+  padding: 2em;
+}
+
+@media only screen and (min-width: 720px) {
+  main #aboutSection .row .aboutInfo {
+    padding: 1.6em 40px;
+  }
+}
+
+@media only screen and (min-width: px) {
+  main #aboutSection .row .aboutInfo {
+    padding: 2em 100px;
+  }
+}
+
+main #aboutSection .row .aboutInfo i {
+  font-size: 3em;
+  margin-bottom: 25px;
+}
+
+main #aboutSection .row .aboutInfo span {
+  max-width: 150px;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  height: 100%;
+}
+
+main #aboutSection .row .aboutInfo .alternateGrey {
+  background-color: lightgray;
+  color: black;
+}
+
+main #aboutSection .row .downArrow {
+  font-size: 2em;
+}
+
+main #aboutSection .row .downArrow a i {
+  color: black;
+}
+
+main #aboutSection .row .downArrow a i:hover {
+  color: grey;
+}
+
+main #retailers {
+  background-color: black;
+  color: white;
+  padding-top: 50px;
+}
+
+main #retailers h3 {
+  font-weight: 600;
+}
+
+main #retailers h3:after {
+  content: '';
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid black;
+  border-bottom: 2px solid white;
+  margin-top: 5px;
+  width: 50%;
+}
+
+main #contact {
+  padding-top: 50px;
+}
+
+main #contact #contactDiv div .bottomSocials {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+main #contact #contactDiv .contactSections {
+  min-width: 200px;
+}
+
+main #contact h3 {
+  font-weight: 600;
+}
+
+main #contact h3:after {
+  content: '';
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid black;
+  border-bottom: 3px solid black;
+  margin-top: 5px;
+  width: 50%;
+  position: relative;
+  left: 70px;
 }
 /*# sourceMappingURL=index.css.map */
