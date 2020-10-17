@@ -29,7 +29,7 @@ function NavLinks() {
   return (
     <ul class='d-flex navLinks'>
       <li class='firstLi'>
-        <a href='#header'><i class="fas fa-igloo"></i></a>
+        <a href='#header'><i class="fas fa-camera"></i></a>
       </li>
       <li>
         <a href='#aboutSection'>About</a>
