@@ -121,12 +121,23 @@ function FindARetailer() {
     <section id='retailers' class='d-flex flex-column align-items-center'>
       <h3>Find A Retailer <i class="fas fa-shopping-cart"></i></h3>
       <div class='row' id='retailerDiv'>
-        <div class='col-6'>
-          <p>ONE</p>
-          <p>SHOP LINKS</p>
+        <div class='col-12 col-md-6 retailerSection text-center d-flex flex-column'>
+          <h4>Find us online!</h4>
+          <div class='btn btn-light d-flex flex-column justify-content-center align-items-center' id='amazonButton'>
+            <i class="fab fa-amazon"></i>
+            <p class='d-flex justify-content-center align-items-center'>Our amazon shop.</p>
+          </div>
+          <div class='btn btn-light d-flex flex-column justify-content-center align-items-center align-self-center' id='ebayButton'>
+            <i class="fab fa-ebay"></i>
+            <p class='d-flex justify-content-center align-items-center'>Our ebay storefront.</p>
+          </div>
+          <div class='btn btn-light d-flex flex-column justify-content-center align-items-center align-self-end' id='otherButton'>
+            <i class="fas fa-shopping-basket"></i>
+            <p class='d-flex justify-content-center align-items-center'>Another shop!</p>
+          </div>
         </div>
-        <div class='col-6'>
-          <p>TWO</p>
+        <div class='col-12 col-md-6 retailerSection text-center' id='physical'>
+          <h4>Or find our products near you!</h4>
           <p>Physical Locations</p>
         </div>
       </div>

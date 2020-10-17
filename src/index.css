@@ -176,9 +176,10 @@ main #aboutSection .row .downArrow a i:hover {
 }
 
 main #retailers {
-  background-color: black;
+  background-image: url(./images/bigcamera.jpg);
   color: white;
   padding-top: 50px;
+  padding-bottom: 40px;
 }
 
 main #retailers h3 {
@@ -193,6 +194,68 @@ main #retailers h3:after {
   border-bottom: 2px solid white;
   margin-top: 5px;
   width: 50%;
+}
+
+main #retailers #retailerDiv {
+  min-width: 500px;
+}
+
+@media only screen and (max-width: 720px) {
+  main #retailers #retailerDiv {
+    max-width: 200px;
+  }
+}
+
+main #retailers #retailerDiv .retailerSection {
+  padding: 20px;
+  min-width: 200px;
+}
+
+main #retailers #retailerDiv .retailerSection #amazonButton {
+  color: #cf8700;
+  padding: 5px;
+  margin-bottom: 15px;
+  max-width: 150px;
+  margin-left: 20px;
+}
+
+main #retailers #retailerDiv .retailerSection #amazonButton p {
+  margin-bottom: 5px;
+}
+
+main #retailers #retailerDiv .retailerSection #ebayButton {
+  color: #0000c7;
+  padding: 5px;
+  margin-bottom: 15px;
+  max-width: 150px;
+}
+
+main #retailers #retailerDiv .retailerSection #ebayButton p {
+  margin-bottom: 5px;
+}
+
+main #retailers #retailerDiv .retailerSection #otherButton {
+  color: #970083;
+  padding: 5px;
+  margin-bottom: 15px;
+  max-width: 150px;
+  margin-right: 20px;
+}
+
+main #retailers #retailerDiv .retailerSection #otherButton p {
+  margin-bottom: 5px;
+}
+
+main #retailers #retailerDiv .retailerSection h4 {
+  margin-bottom: 15px;
+}
+
+main #retailers #retailerDiv .retailerSection i {
+  font-size: 2em;
+}
+
+main #retailers #retailerDiv .retailerSection p a {
+  text-decoration: underline;
 }
 
 main #contact {
@@ -227,7 +290,7 @@ main #contact h3:after {
   margin-top: 5px;
   width: 50%;
   position: relative;
-  left: 70px;
+  left: 90px;
 }
 
 #footer {

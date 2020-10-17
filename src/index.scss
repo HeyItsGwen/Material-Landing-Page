@@ -170,9 +170,10 @@ main {
   }
 
   #retailers {
-    background-color: black;
+    background-image: url(./images/bigcamera.jpg);
     color: white;
     padding-top: 50px;
+    padding-bottom: 40px;
 
     h3 {
       font-weight: 600;
@@ -186,7 +187,69 @@ main {
     }
 
     #retailerDiv {
+      min-width: 500px;
+
+      @media only screen and (max-width: 720px) {
+        max-width: 200px;
+      }
       
+      .retailerSection {
+        padding: 20px;
+        min-width: 200px;
+
+        #amazonButton {
+          color: rgb(207, 135, 0);
+          padding: 5px;
+          margin-bottom: 15px;
+          max-width: 150px;
+          margin-left: 20px;
+
+          p {
+            margin-bottom: 5px;
+          }
+        }
+
+        #ebayButton {
+          color: rgb(0, 0, 199);
+          padding: 5px;
+          margin-bottom: 15px;
+          max-width: 150px;
+
+          p {
+            margin-bottom: 5px;
+          }
+        }
+
+        #otherButton {
+          color: rgb(151, 0, 131);
+          padding: 5px;
+          margin-bottom: 15px;
+          max-width: 150px;
+          margin-right: 20px;
+
+          p {
+            margin-bottom: 5px;
+          }
+        }
+
+        h4 {
+          margin-bottom: 15px;
+        }
+
+        i {
+          font-size: 2em;
+        }
+
+        p {
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      #physical {
+        
+      }
     }
   }
 
@@ -221,7 +284,7 @@ main {
         margin-top: 5px;
         width: 50%;
         position: relative;
-        left: 70px;
+        left: 90px;
       }
     }
   }
