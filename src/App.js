@@ -1,4 +1,5 @@
 import React from 'react';
+import map from './images/map.jpg';
 
 function App() {
   return (
@@ -57,7 +58,7 @@ function HeroSection() {
   return (
     <section class='jumbotron d-flex flex-md-row justify-content-center justify-content-md-between align-items-center'>
       <span class='align-self-md-center' id='titleP'>
-        <h1>It's<br/>Your<br/>Brand</h1>
+        <h1>It's Your Brand</h1>
         <p>Show it off to the world</p>
       </span>
     </section>
@@ -123,7 +124,7 @@ function FindARetailer() {
       <div class='row' id='retailerDiv'>
         <div class='col-12 col-md-6 retailerSection text-center d-flex flex-column'>
           <h4>Find us online!</h4>
-          <div class='btn btn-light d-flex flex-column justify-content-center align-items-center' id='amazonButton'>
+          <div class='btn btn-light d-flex flex-column justify-content-center align-items-center align-self-center align-self-sm-start' id='amazonButton'>
             <i class="fab fa-amazon"></i>
             <p class='d-flex justify-content-center align-items-center'>Our amazon shop.</p>
           </div>
@@ -131,14 +132,14 @@ function FindARetailer() {
             <i class="fab fa-ebay"></i>
             <p class='d-flex justify-content-center align-items-center'>Our ebay storefront.</p>
           </div>
-          <div class='btn btn-light d-flex flex-column justify-content-center align-items-center align-self-end' id='otherButton'>
+          <div class='btn btn-light d-flex flex-column justify-content-center align-items-center align-self-center align-self-sm-end' id='otherButton'>
             <i class="fas fa-shopping-basket"></i>
             <p class='d-flex justify-content-center align-items-center'>Another shop!</p>
           </div>
         </div>
         <div class='col-12 col-md-6 retailerSection text-center' id='physical'>
           <h4>Or find our products near you!</h4>
-          <p>Physical Locations</p>
+          <a href='https://www.google.com/maps' target='blank'><img src={map} alt='google maps'></img></a>
         </div>
       </div>
     </section>
@@ -157,18 +158,18 @@ function ContactSection() {
             <li><a href='http://www.twitter.com' target='blank'><i class="fab fa-twitter"></i></a></li>
             <li><a href='http://www.instagram.com' target='blank'><i class="fab fa-instagram"></i></a></li>
           </ul>
-          <p class='text-center'>Or send us an email at:<br/><a class='text-center' href='emailto:exampleemail@email.com'>YourBrand@email.com</a></p>
+          <p class='text-center'>Send us an email at:<br/><a class='text-center' href='emailto:exampleemail@email.com'>YourBrand@email.com</a></p>
           <p class='text-center'></p>
         </div>
-        <div class='col-sm-6 col-12 contactSections'>
+        <div class='col-sm-6 col-12 contactSections d-flex flex-column align-items-center'>
           <p>Or contact us here, and we'll get back to you:</p>
-          <form id='contactForm'>
+          <form id='contactForm' class='text-center'>
             <div class='form-group'>
               <label for='emailInput'>Your Email:</label>
               <input type='email' class='form-control' id='emailInput' aria-describedby="emailHelp"></input>
               <small id='emailHelp' class='form-text text-muted'>Your information is safe with us!</small>
             </div>
-            <div class='form-group'>
+            <div class='form-group textInput'>
               <label for='helpInput'>How can we help?</label>
               <input type='text' class='form-control' id='helpInput'></input>
             </div>
@@ -183,8 +184,9 @@ function ContactSection() {
 function Footer() {
   return (
     <div id='footer' class='d-flex flex-column align-items-center'>
-      <p>Copyright <i class="fas fa-copyright"></i>Your Brand 2020. | <a class='text-center' href='emailto:exampleemail@email.com'>YourBrand@email.com</a> | 1(800)555-1234</p>
-      <p>Made with ♥ and <i class="fas fa-coffee"></i> by <a href='https://github.com/HeyItsGwen' target='blank'>Gwen</a></p>
+      <p>Copyright <i class="fas fa-copyright"></i>Your Brand 2020.</p>
+      <p><a class='text-center' href='emailto:exampleemail@email.com'>YourBrand@email.com</a> | 1(800)555-1234</p>
+      <p class='text-center'>Made with ♥ and <i class="fas fa-coffee"></i> by <a href='https://github.com/HeyItsGwen' target='blank'>Gwen</a></p>
     </div>
   )
 }

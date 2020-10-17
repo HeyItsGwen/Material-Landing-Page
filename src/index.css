@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -111,6 +112,20 @@ main .jumbotron span {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  main .jumbotron span {
+    left: 60px;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  main .jumbotron span {
+    top: 0;
+    left: 150px;
+  }
+}
+
 main .jumbotron h1 {
   font-weight: 600;
   font-size: 4.5em;
@@ -121,6 +136,7 @@ main .jumbotron h1 {
 main .jumbotron #titleP p {
   font-style: italic;
   color: white;
+  font-size: 1.2em;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
@@ -208,7 +224,6 @@ main #retailers #retailerDiv {
 
 main #retailers #retailerDiv .retailerSection {
   padding: 20px;
-  min-width: 200px;
 }
 
 main #retailers #retailerDiv .retailerSection #amazonButton {
@@ -217,6 +232,12 @@ main #retailers #retailerDiv .retailerSection #amazonButton {
   margin-bottom: 15px;
   max-width: 150px;
   margin-left: 20px;
+}
+
+@media only screen and (max-width: 400px) {
+  main #retailers #retailerDiv .retailerSection #amazonButton {
+    width: 100%;
+  }
 }
 
 main #retailers #retailerDiv .retailerSection #amazonButton p {
@@ -230,6 +251,12 @@ main #retailers #retailerDiv .retailerSection #ebayButton {
   max-width: 150px;
 }
 
+@media only screen and (max-width: 400px) {
+  main #retailers #retailerDiv .retailerSection #ebayButton {
+    width: 100%;
+  }
+}
+
 main #retailers #retailerDiv .retailerSection #ebayButton p {
   margin-bottom: 5px;
 }
@@ -240,6 +267,12 @@ main #retailers #retailerDiv .retailerSection #otherButton {
   margin-bottom: 15px;
   max-width: 150px;
   margin-right: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  main #retailers #retailerDiv .retailerSection #otherButton {
+    width: 100%;
+  }
 }
 
 main #retailers #retailerDiv .retailerSection #otherButton p {
@@ -258,8 +291,21 @@ main #retailers #retailerDiv .retailerSection p a {
   text-decoration: underline;
 }
 
+main #retailers #retailerDiv #physical a img {
+  width: 75%;
+  height: auto;
+}
+
 main #contact {
   padding-top: 50px;
+}
+
+main #contact form {
+  max-width: 200px;
+}
+
+main #contact form .textInput #helpInput {
+  height: 120px;
 }
 
 main #contact #contactDiv div .bottomSocials {
@@ -303,5 +349,11 @@ main #contact h3:after {
 #footer p {
   margin-bottom: 0;
   color: #9b9b9b;
+}
+
+@media only screen and (max-width: 400px) {
+  #footer p {
+    max-width: 250px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

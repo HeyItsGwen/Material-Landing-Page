@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -103,6 +104,14 @@ main {
       @media only screen and (min-width: 576px) {
         left: -100px;
       }
+      @media only screen and (max-width: 500px) {
+        left: 60px;
+        max-width: 400px;
+      }
+      @media only screen and (max-height: 500px) {
+        top: 0;
+        left: 150px;
+      }
     }
 
     h1 {
@@ -115,6 +124,7 @@ main {
     #titleP p {
       font-style: italic;
       color: white;
+      font-size: 1.2em;
       text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     }
 
@@ -195,7 +205,6 @@ main {
       
       .retailerSection {
         padding: 20px;
-        min-width: 200px;
 
         #amazonButton {
           color: rgb(207, 135, 0);
@@ -203,6 +212,10 @@ main {
           margin-bottom: 15px;
           max-width: 150px;
           margin-left: 20px;
+
+          @media only screen and (max-width: 400px) {
+            width: 100%;
+          }
 
           p {
             margin-bottom: 5px;
@@ -215,6 +228,10 @@ main {
           margin-bottom: 15px;
           max-width: 150px;
 
+          @media only screen and (max-width: 400px) {
+            width: 100%;
+          }
+
           p {
             margin-bottom: 5px;
           }
@@ -226,6 +243,10 @@ main {
           margin-bottom: 15px;
           max-width: 150px;
           margin-right: 20px;
+
+          @media only screen and (max-width: 500px) {
+            width: 100%;
+          }
 
           p {
             margin-bottom: 5px;
@@ -248,13 +269,28 @@ main {
       }
 
       #physical {
-        
+        a {
+          img {
+            width: 75%;
+            height: auto;
+          }
+        }
       }
     }
   }
 
   #contact {
     padding-top: 50px;
+
+    form {
+      max-width: 200px;
+
+      .textInput {
+        #helpInput {
+          height: 120px;
+        }
+      }
+    }
 
     #contactDiv {
       div {
@@ -299,5 +335,9 @@ main {
   p {
     margin-bottom: 0;
     color: rgb(155, 155, 155);
+
+    @media only screen and (max-width: 400px) {
+      max-width: 250px;
+    }
   }
 }
