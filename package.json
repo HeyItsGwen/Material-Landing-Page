@@ -2,7 +2,7 @@
   "name": "landing-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://HeyItsGwen.github.io/Simple-Landing-Page",
+  "homepage": "https://heyitsgwen.github.io/Simple-Landing-Page/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
