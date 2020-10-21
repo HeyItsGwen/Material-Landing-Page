@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Product-Landing-Page/static/css/main.b5ab6980.chunk.css",
-    "main.js": "/Product-Landing-Page/static/js/main.cb1d2421.chunk.js",
-    "main.js.map": "/Product-Landing-Page/static/js/main.cb1d2421.chunk.js.map",
-    "runtime-main.js": "/Product-Landing-Page/static/js/runtime-main.0f39bdaf.js",
-    "runtime-main.js.map": "/Product-Landing-Page/static/js/runtime-main.0f39bdaf.js.map",
-    "static/js/2.cc28adf8.chunk.js": "/Product-Landing-Page/static/js/2.cc28adf8.chunk.js",
-    "static/js/2.cc28adf8.chunk.js.map": "/Product-Landing-Page/static/js/2.cc28adf8.chunk.js.map",
-    "index.html": "/Product-Landing-Page/index.html",
-    "precache-manifest.6d489f9c8efbc8f70272282bb5c95282.js": "/Product-Landing-Page/precache-manifest.6d489f9c8efbc8f70272282bb5c95282.js",
-    "service-worker.js": "/Product-Landing-Page/service-worker.js",
-    "static/css/main.b5ab6980.chunk.css.map": "/Product-Landing-Page/static/css/main.b5ab6980.chunk.css.map",
-    "static/js/2.cc28adf8.chunk.js.LICENSE.txt": "/Product-Landing-Page/static/js/2.cc28adf8.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/Product-Landing-Page/static/media/cameratransparent.efc76e0f.png",
-    "static/media/map.jpg": "/Product-Landing-Page/static/media/map.14579831.jpg"
+    "main.css": "/Simple-Landing-Page/static/css/main.b5ab6980.chunk.css",
+    "main.js": "/Simple-Landing-Page/static/js/main.cb1d2421.chunk.js",
+    "main.js.map": "/Simple-Landing-Page/static/js/main.cb1d2421.chunk.js.map",
+    "runtime-main.js": "/Simple-Landing-Page/static/js/runtime-main.0f39bdaf.js",
+    "runtime-main.js.map": "/Simple-Landing-Page/static/js/runtime-main.0f39bdaf.js.map",
+    "static/js/2.cc28adf8.chunk.js": "/Simple-Landing-Page/static/js/2.cc28adf8.chunk.js",
+    "static/js/2.cc28adf8.chunk.js.map": "/Simple-Landing-Page/static/js/2.cc28adf8.chunk.js.map",
+    "index.html": "/Simple-Landing-Page/index.html",
+    "precache-manifest.6d489f9c8efbc8f70272282bb5c95282.js": "/Simple-Landing-Page/precache-manifest.6d489f9c8efbc8f70272282bb5c95282.js",
+    "service-worker.js": "/Simple-Landing-Page/service-worker.js",
+    "static/css/main.b5ab6980.chunk.css.map": "/Simple-Landing-Page/static/css/main.b5ab6980.chunk.css.map",
+    "static/js/2.cc28adf8.chunk.js.LICENSE.txt": "/Simple-Landing-Page/static/js/2.cc28adf8.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Simple-Landing-Page/static/media/cameratransparent.efc76e0f.png",
+    "static/media/map.jpg": "/Simple-Landing-Page/static/media/map.14579831.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.0f39bdaf.js",
